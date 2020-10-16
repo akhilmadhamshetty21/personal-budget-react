@@ -8,14 +8,13 @@ function DonutChart(){
             {
                 data: [],
                 backgroundColor: [
-                    '#ffcd56',
-                    '#ff6384',
-                    '#36a2eb',
-                    '#fd6b19',
-                    '#B3B6B7',
-                    '#A533FF',
-                    '#311846',
-                    '#6D6673'
+                    "#ffcd56",
+                    "#ff6384",
+                    "#36a2eb",
+                    "#fd6b19",
+                    "#AB6F62",
+                    "#766D0F",
+                    "#90A2F3",
                 ]
             }],
         labels: []
