@@ -35,7 +35,6 @@ function PieChart(){
     useEffect(() => {
     axios.get('http://localhost:3001/budget')
     .then(res => {
-      console.log(res);
       for (var i = 0; i < res.data.myBudget.length; i++) {
           dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
           dataSource.labels[i] = res.data.myBudget[i].title;
