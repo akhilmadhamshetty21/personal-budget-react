@@ -1,4 +1,4 @@
-import Server from '../Server/Server';
+
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import Chart from 'chart.js';
@@ -31,7 +31,6 @@ function PieChart(){
     });
 }
 
-// const[posts, setPosts] = useState([])
     useEffect(() => {
     axios.get('http://localhost:3001/budget')
     .then(res => {
