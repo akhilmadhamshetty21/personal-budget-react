@@ -1,11 +1,15 @@
 import React from 'react';
+import PieChart from '../PieChart/PieChart';
+import DonutChart from '../DonutChart/DonutChart';
 
 function HomePage() {
   return (
+     
     <main id="maincontent">
-      <div class="container center">
-        <div class="page-area">
-          <div class="text-box">
+       
+      <div className="container center">
+        <div className="page-area">
+          <div className="text-box">
            
             <section>
             
@@ -21,7 +25,7 @@ function HomePage() {
             </section>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <section>
               
@@ -35,7 +39,7 @@ function HomePage() {
             </section>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <section>
               <h1>Results</h1>
@@ -48,7 +52,7 @@ function HomePage() {
             </section>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <section>
               <h1>Free</h1>
@@ -58,7 +62,7 @@ function HomePage() {
             </section>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <section>
               <h1>Stay on track</h1>
@@ -71,7 +75,7 @@ function HomePage() {
             </section>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <section>
               <h1>Alerts</h1>
@@ -82,19 +86,19 @@ function HomePage() {
             </section>
           </div>
           <h1>Donut D3 Chart</h1>
-          <div id="chart">chart</div>
+          <div id="chart"><DonutChart/></div>
 
-          <div class="text-box">
+          <div className="text-box">
             
             <h1>Pie Chart</h1>
-            <p>
-              <canvas id="myChart" width="400" height="400"></canvas>
-            </p>
+            <canvas id="myChart" width="400" height="400">
+            <PieChart/>
+            </canvas>
           </div>
         </div>
       </div>
       <img
-        src="budget.jpg"
+        src="./budget.jpg"
         width="30%"
         height="30%"
         alt="Displaying budget photo"
